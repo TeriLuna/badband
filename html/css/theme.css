@@ -4,7 +4,8 @@
 body {
   color: rgb(14, 14, 14);
   font-family: "Open Sans", sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
+  text-align: left;
   letter-spacing: 0;
   font-weight: 300;
   margin: -8px;
@@ -42,6 +43,7 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0px;
   font-weight: 500;
   font-family: "Poppins", sans-serif;
+  display: block;
 }
 
 h1 {
@@ -78,12 +80,49 @@ p {
   color: rgb(24, 24, 24);  
   margin: 0;
   line-height: 2;
+  display: block;
 }
 
 .fancy-text {
   font-weight: lighter;
   color: rgba(255, 255, 255, 0.795);
   font-size: 4rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.fancy-text:hover { 
+  transform: scale(1.5);
+  font-weight: bold;
+}
+
+a.fancy-text-1 {
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-weight: medium;
+  color: rgb(8, 8, 8);
+  letter-spacing: 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.fancy-text-1:hover { 
+  color: rgb(192, 0, 0);
+  font-weight: 700  ;
+  text-decoration: line-through;
+}
+
+a.fancy-text-2 {
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-weight: medium;
+  color: rgb(8, 8, 8);
+  letter-spacing: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.fancy-text-2:hover { 
+  font-size: large;
+  letter-spacing: 8px;
+  text-decoration: overline;
 }
 /* TEXT CLASSES AND DECORATION */
 
@@ -101,6 +140,22 @@ p {
 
 .text-green {
   color: rgb(3, 116, 3);
+}
+
+.text-red {
+  color: rgb(207, 5, 5);
+}
+
+.text-orange {
+  color: rgb(230, 151, 4);
+}
+
+.text-blue {
+  color: rgb(19, 19, 190);
+}
+
+.text-purple {
+  color: #bd07dd;
 }
 
 .text-white {
@@ -159,11 +214,25 @@ tr,td {
   color: rgb(129, 44, 44);
 }
 
+input {
+  border: 1px solid rgb(141, 141, 141);
+  width: 100%;
+  margin-bottom: 1rem;
+  transition: all 0.3s;
+}
+
+input:focus {
+  width: 105%;
+  font-size: 18px;
+}
+
+
+textarea {
+  width: 100%;
+}
+
 input, textarea {
   background: transparent;
-  width: 100%;
-  border: 1px solid rgb(20, 20, 20);
-  margin-bottom: 1rem;
   padding: 10px 15px;
   font: 300 16px "Open Sans",sans-serif;
   border-radius: 3px;
@@ -171,6 +240,28 @@ input, textarea {
 
 textarea {
   height: 120px;
+}
+
+.button {
+  font: 400 13px "Poppins", sans-serif;
+  text-transform: uppercase;
+  transition: all 0.2s;
+  letter-spacing: 1.2px;
+}
+
+.button:focus {
+  width: 105%;
+  font-size: medium;
+  box-shadow: inset;
+}
+
+.button-dark {
+  background: black;
+  color: white;
+}
+
+.button-radius {
+  border-radius: 5px;
 }
 
 iframe {
@@ -199,6 +290,14 @@ iframe {
     width: 100%;
     border: 0;
   }
+  div.iframeSection iframe {
+    width: 49%;
+    border: 0;
+  }
+}
+
+.iframeSection {
+  display: inline;
 }
 
 ul {
@@ -220,7 +319,7 @@ ul li ul, ul li ol {
   top: 0;
   overflow: visible;
   width: 100%;
-  height: 80px;
+  height: 100px;
   transition: ease-in-out 0.3s;
 }
 
@@ -315,7 +414,7 @@ ul li ul, ul li ol {
 }
 
 .header.sticky {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   box-shadow: 0 0 30px rgba(44, 44, 44, 0.582);
@@ -323,6 +422,24 @@ ul li ul, ul li ol {
 
 .header.black {
   background: rgb(19, 18, 18);
+}
+
+@media only screen and (min-width: 320px)  {
+  .header {
+    height: 150px;
+  }
+}
+
+@media only screen and (min-width: 768px)  {
+  .header {
+    height: 100px;
+  }
+}
+
+@media only screen and (min-width: 1024px)  {
+  .header {
+    height: 100px;
+  }
 }
 
 div.right {
@@ -346,10 +463,32 @@ div img {
 } 
 
 .center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   width: 50%;
+  padding: 0px;
+}
+
+@media only screen and (min-width: 320px)  {
+  .center {
+    margin: auto;
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .center {
+    margin: auto;
+    width: 50%;
+    padding: 0px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .center {
+    margin: auto;
+    width: 55%;
+    padding: 0px;
+  }
 }
 /* SECTION */
 
@@ -360,13 +499,38 @@ div img {
 .section-fullscreen {
   background-image: url("../img/badband.jpg");
   width: 100%;
-  height: 100vh;
-  background-position: center;
+  height: 158vh;
+  background-position: center center;
 }
 
 div.section-sticky {
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
+}
+
+@media only screen and (min-width: 320px)  {
+  div.section-sticky {
+    position: -webkit-relative;
+    position:relative;
+    top: 0;
+  }
+}
+
+@media only screen and (min-width: 768px)  {
+  div.section-sticky {
+    position: -webkit-relative;
+    position:relative;
+    top: 0;
+  }
+}
+
+@media only screen and (min-width: 1024px)  {
+  div.section-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  }
 }
 
 /* CONTAINEER */
@@ -481,20 +645,18 @@ ul.list-inline li {
 }
 
 .list-inline a:hover {
-  color: black;
-  font-size: medium;
+  color: rgb(243, 243, 243);
+  font-weight: 700;
 }
 
 div.leftPosition {
   width: auto;
   float: left;
-  padding: 0px;
 }
 
 div.rightPosition {
   width: auto;
   float: right;
-  padding: 0px;
 }
 
 .positionMiddle {
@@ -748,7 +910,7 @@ div.rightPosition {
 }
 
 #contact {
-  display: flex;
+  display: inline-flex;
   flex: 1;
   flex-direction: column;
   padding: 10px;
@@ -756,7 +918,7 @@ div.rightPosition {
 
 @media only screen and (min-width: 320px) {
   #contact {
-    display: flex;
+    display: inline-flex;
     flex: 1;
     flex-direction: column;
     padding: 10px;
@@ -765,20 +927,20 @@ div.rightPosition {
 
 @media only screen and (min-width: 768px) {
   #contact {
-    display: flex;
+    display: inline-flex;
     flex: 1;
     flex-direction: column;
     padding: 10px;
-    align-items: center;
   }
 }
 
 @media only screen and (min-width: 1024px) {
   #contact {
-    display: inline-grid;
+    display: inline-flex;
     flex: 1;
     flex-direction: row;
-    padding: 10px;
+    margin-bottom: 40px;
+    padding: 0 20px;
   }
 }
 
@@ -868,4 +1030,3 @@ div.rightPosition {
   transform: scale(1.1);
   border-radius: 5px;
 }
-
