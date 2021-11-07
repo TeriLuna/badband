@@ -14,20 +14,20 @@
   <body>
     <!-- HEADER -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-black">
-      <div class="container py-4">
-        <a class="navbar-brand fs-3" href="../index.html">La BadBand</a>
+      <div class="container py-1">
+        <a class="navbar-brand fs-2 fw-bold" href="../index.html">La BadBand</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+              <a class="nav-link" aria-current="page" href="../index.html">Home</a>
             <li class="nav-item">
               <a class="nav-link" href="about.html">Nosotros</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="music.html">Música</a>
+              <a class="nav-link active" href="music.html">Música</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="gallery.html">Fotos</a>
@@ -43,34 +43,33 @@
     <!-- SECTION -->
     <div class="section">
       <div class="container">
-        <div class="row mt-5">
+        <div class="row">
           <h1 class="text-center mb-5">Sumérjete en la vibra de la música</h1>
-          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            </div>
-            <!-- yotube section -->
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/PY7JW33c07k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-pic ture" allowfullscreen alt="La BadBand's Video from YouTube" class="d-block w-100"></iframe> <!-- URL taken from YouTube --> 
-              </div>
-              <!-- Spotify section -->
-              <div class="carousel-item">
-                <iframe src="https://open.spotify.com/embed/artist/01sX3HCmFOQwAM6eZgsARJ" width="" height="315" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" alt="La Badband's audio from Spotify" class="d-block w-100"></iframe> <!-- URL taken from Spotify -->
-              </div>
-            </div>
-          </div>          
-        </div> <!-- End row -->
+        </div>
+        <div class="row">
+          <!-- yotube section -->
+          <div class="col-12 col-lg-9">
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/PY7JW33c07k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-pic ture" allowfullscreen alt="La BadBand's Video from YouTube" class="d-block w-100"></iframe> <!-- URL taken from YouTube --> 
+
+          </div>
+
+          <!-- Spotify section -->
+          <div class="col-12 col-lg-3">
+
+            <iframe src="https://open.spotify.com/embed/artist/01sX3HCmFOQwAM6eZgsARJ" width="" height="315" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" alt="La Badband's audio from Spotify" class="d-block w-100"></iframe> <!-- URL taken from Spotify -->
+
+          </div>
+        </div> <!-- End row -->       
       </div> <!-- End section -->
     </div> <!-- End container -->
 
     <!-- FOOTER -->
     <footer class="container-fluid bg-pride">
-      <div class="container p-5">
+      <div class="container py-5">
         <div class="row">
           <div class="col-12 col-lg-3 text-center">
-            <a href="../index.html" class="no-underline text-white fs-1 fw-bold">La BadBand</a>
+            <a href="../index.html" class="no-underline text-white fs-2 fw-bold">La BadBand</a>
           </div>
           <div class="col-12 col-lg-2 offset-lg-6 fs-4 text-white d-flex flex-row justify-content-around">
             <i class="bi-facebook">
@@ -87,8 +86,8 @@
             </i>
           </div>
         </div><!-- end row -->
-        <div class="border-top border-dark border-2 mt-5">
-          <p class="text-center">&copy; 2021 Catherine Lozada Bedoya, Todos los derechos reservados.</p>
+        <div class="border-top border-light border-2 mt-5">
+          <p class="text-center text-white">&copy; 2021 Catherine Lozada Bedoya, Todos los derechos reservados.</p>
         </div>
       </div><!-- end container -->
     </footer>
