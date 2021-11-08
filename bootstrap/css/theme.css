@@ -400,3 +400,8 @@ div.rightPosition {
   position: absolute;
   justify-content: center;
 }
+
+a i.social{
+  text-decoration: none;
+  color: white;
+}
