@@ -1,52 +1,36 @@
-// Import
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800");
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
-@import "variables";
-
 html {
-  scroll-behavior: smooth;
-}
+  scroll-behavior: smooth; }
 
 body {
-  font-family: $font-family-1 !important;
-}
-
-// Fancy text
+  font-family: "Open Sans", sans-serif !important; }
 
 .fancy-text {
   font-weight: lighter;
   color: rgba(255, 255, 255, 0.795);
-  font-size: 4rem;
-}
+  font-size: 4rem; }
 
 a.fancy-text-1 {
   text-decoration: none;
   font-family: "Open Sans", sans-serif;
   font-weight: medium;
-  color: rgb(8, 8, 8);
+  color: #080808;
   letter-spacing: 15px;
-  transition: all 0.3s ease-in-out;
-  
-  :hover {
-    color: rgb(192, 0, 0);
-    font-weight: 700  ;
-    text-decoration: line-through;
-  }
-}
+  transition: all 0.3s ease-in-out; }
+  a.fancy-text-1 :hover {
+    color: #c00000;
+    font-weight: 700;
+    text-decoration: line-through; }
 
 a.fancy-text-2 {
   text-decoration: none;
   font-family: "Open Sans", sans-serif;
   font-weight: medium;
-  color: rgb(8, 8, 8);
+  color: #080808;
   letter-spacing: 5px;
-  transition: all 0.3s ease-in-out;
-
-  :hover {
+  transition: all 0.3s ease-in-out; }
+  a.fancy-text-2 :hover {
     font-size: large;
     letter-spacing: 8px;
-    text-decoration: overline;
-  }
-  
-}
-
+    text-decoration: overline; }
