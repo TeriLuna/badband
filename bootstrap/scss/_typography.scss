@@ -1,0 +1,41 @@
+// TEXT 
+.no-underline {
+  @include t-decoration-none;
+}
+
+.fancy-text {
+  font-weight: lighter;
+  color: rgba(255, 255, 255, 0.795);
+  font-size: 4rem;
+}
+
+a.fancy-text-2 {
+  @include t-decoration-none;
+  font-family: $font-family-1;
+  font-weight: medium;
+  color: rgb(8, 8, 8);
+  letter-spacing: 5px;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    font-size: large;
+    letter-spacing: 8px;
+    text-decoration: overline;
+  }
+}
+
+p {
+  font-size: 16px;
+  font-family: $font-family-2;
+  letter-spacing: 1px;
+}
+
+/* TEXT CLASSES AND DECORATION */
+
+.font-family-primary {
+  font-family: $font-family-1;
+}
+
+.font-family-secondary {
+  font-family: $font-family-2;
+}
