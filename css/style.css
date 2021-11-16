@@ -17897,10 +17897,7 @@ button.nav-link {
 
 .carousel-img__size {
   width: 100%;
-}
-
-.bg-white-05 {
-  background: rgba(255, 255, 255, 0.5) !important;
+  height: 50%;
 }
 
 .section {
