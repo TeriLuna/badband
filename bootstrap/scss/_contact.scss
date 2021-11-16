@@ -1,0 +1,12 @@
+// Contact section
+
+.contact {
+  letter-spacing: 2px;
+  font-weight:normal;
+  text-transform: uppercase;
+  &__letter {
+    font-weight: 200;
+    color: rgb(83, 83, 83);
+    text-transform: none;
+  }
+}

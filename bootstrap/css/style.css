@@ -4406,7 +4406,6 @@ textarea.form-control-lg {
 .carousel-inner {
   position: relative;
   width: 100%;
-  height: 90vh;
   overflow: hidden; }
   .carousel-inner::after {
     display: block;
@@ -12192,13 +12191,46 @@ p {
 .font-family-secondary {
   font-family: "Poppins", monospace; }
 
-.rainbow-text {
-  background-image: linear-gradient(to left, #7500c9, #0202ca, green, #e9e900, orange, red);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; }
+@media only screen and (min-width: 320px) {
+  .about {
+    display: block; }
+    .about .side-left {
+      width: 100%;
+      padding-bottom: 30px; }
+    .about .side-right {
+      width: 100%; } }
+
+@media only screen and (min-width: 768px) {
+  .about {
+    display: block; }
+    .about .side-left {
+      width: 100%;
+      padding-bottom: 30px; }
+    .about .side-right {
+      width: 100%; } }
+
+@media only screen and (min-width: 1024px) {
+  .about {
+    display: flex; }
+    .about .side-left {
+      width: 40%; }
+    .about .side-right {
+      width: 60%;
+      padding-left: 40px; } }
 
 button.nav-link {
   color: green; }
+
+.side__text {
+  letter-spacing: 1.5px;
+  font-weight: 350; }
+  .side__text-rainbow {
+    background-image: linear-gradient(to left, #7500c9, #0202ca, green, #e9e900, orange, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bolder;
+    letter-spacing: 2.5px;
+    font-size: larger; }
 
 .contact {
   letter-spacing: 2px;
@@ -12236,32 +12268,19 @@ button.nav-link {
       font-weight: 700;
       text-decoration: line-through; }
 
-@media only screen and (min-width: 320px) {
-  .about {
-    display: block; }
-    .about .side-4 {
-      width: 100%;
-      padding-bottom: 30px; }
-    .about .side-5 {
-      width: 100%; } }
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 1020; }
+  .sticky__text {
+    font-weight: bolder; }
+    .sticky__text-rainbow {
+      background-image: linear-gradient(to left, #7500c9, #0202ca, green, #e9e900, orange, red);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
 
-@media only screen and (min-width: 768px) {
-  .about {
-    display: block; }
-    .about .side-4 {
-      width: 100%;
-      padding-bottom: 30px; }
-    .about .side-5 {
-      width: 100%; } }
-
-@media only screen and (min-width: 1024px) {
-  .about {
-    display: flex; }
-    .about .side-4 {
-      width: 40%; }
-    .about .side-5 {
-      width: 60%;
-      padding-left: 40px; } }
+.carousel-img__size {
+  width: 100%; }
 
 .section {
   padding: 100px 0; }

@@ -5,11 +5,11 @@ $lg: 1024px;
 @media only screen and (min-width: $sm) {
   .about {
     display: block;
-    .side-4 {
+    .side-left {
       width: 100%;
       padding-bottom: 30px;
     }
-    .side-5 {
+    .side-right {
       width: 100%;
     }
   }
@@ -18,11 +18,11 @@ $lg: 1024px;
 @media only screen and (min-width: $md) {
   .about {
     display: block;
-    .side-4 {
+    .side-left {
       width: 100%;
       padding-bottom: 30px;
     }
-    .side-5 {
+    .side-right {
       width: 100%;
     }
   }
@@ -31,12 +31,38 @@ $lg: 1024px;
 @media only screen and (min-width: $lg) {
   .about {
     display: flex;
-    .side-4 {
+    .side-left {
       width: 40%;
     }
-    .side-5 {
+    .side-right {
       width: 60%;
       padding-left: 40px;
+    }
+  }
+}
+
+// about section
+button.nav-link {
+  color: green;
+}
+
+.side {
+  &__text {
+    letter-spacing: 1.5px;
+    font-weight: 350;
+    &-rainbow {
+      background-image: linear-gradient(to left, 
+      rgb(117, 0, 201), 
+      rgb(2, 2, 202), 
+      green, 
+      rgb(233, 233, 0), 
+      orange, 
+      red);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: bolder;
+      letter-spacing: 2.5px;
+      font-size: larger;
     }
   }
 }

@@ -1,0 +1,64 @@
+// sheet
+.sheet {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+  background-color:transparent;
+  // background-clip: border-box;
+  border: 0px;
+  &__img-top {
+    border-top-left-radius: calc(0.25rem - 1px);
+    border-top-right-radius: calc(0.25rem - 1px);
+  }
+  &__body {
+    flex: 1 1 auto;
+    padding: 1rem 1rem;
+  }
+  &__text {
+    margin-bottom: 0;
+  }
+
+  &__text-fancy {
+    @include t-decoration-none;
+    font-family: $font-family-1;
+    font-weight: medium;
+    color: rgb(8, 8, 8);
+    letter-spacing: 15px;
+    transition: all 0.3s ease-in-out;
+  
+    &:hover {
+      color: rgb(192, 0, 0);
+      font-weight: 700;
+      text-decoration: line-through;
+    }
+  }
+}
+
+// sticky
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+  &__text{
+    font-weight: bolder;
+    &-rainbow {
+      background-image: linear-gradient(to left, 
+      rgb(117, 0, 201), 
+      rgb(2, 2, 202), 
+      green, 
+      rgb(233, 233, 0), 
+      orange, 
+      red);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}
+
+// carousel
+.carousel-img {
+  &__size {
+  width: 100%;
+  }
+}
