@@ -12168,18 +12168,6 @@ textarea.form-control-lg {
   color: rgba(255, 255, 255, 0.795);
   font-size: 4rem; }
 
-a.fancy-text-1 {
-  text-decoration: none;
-  font-family: "Open Sans", sans-serif;
-  font-weight: medium;
-  color: #080808;
-  letter-spacing: 15px;
-  transition: all 0.3s ease-in-out; }
-  a.fancy-text-1:hover {
-    color: #c00000;
-    font-weight: 700;
-    text-decoration: line-through; }
-
 a.fancy-text-2 {
   text-decoration: none;
   font-family: "Open Sans", sans-serif;
@@ -12211,6 +12199,47 @@ p {
 
 button.nav-link {
   color: green; }
+
+.contact {
+  letter-spacing: 2px;
+  font-weight: normal;
+  text-transform: uppercase; }
+  .contact__letter {
+    font-weight: 200;
+    color: #535353;
+    text-transform: none; }
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem; }
+  .card__img, .card__img-top {
+    border-top-left-radius: calc(0.25rem - 1px);
+    border-top-right-radius: calc(0.25rem - 1px); }
+  .card__img, .card__img-top, .card__img-bottom {
+    width: 100%; }
+  .card__body {
+    flex: 1 1 auto;
+    padding: 1rem 1rem; }
+  .card__text:last-child {
+    margin-bottom: 0; }
+  .card__text-fancy {
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-weight: medium;
+    color: #080808;
+    letter-spacing: 15px;
+    transition: all 0.3s ease-in-out; }
+    .card__text-fancy:hover {
+      color: #c00000;
+      font-weight: 700;
+      text-decoration: line-through; }
 
 @media only screen and (min-width: 320px) {
   .about {
