@@ -1,0 +1,42 @@
+$sm: 320px;
+$md: 768px;
+$lg: 1024px;
+
+@media only screen and (min-width: $sm) {
+  .about {
+    display: block;
+    .side-4 {
+      width: 100%;
+      padding-bottom: 30px;
+    }
+    .side-5 {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (min-width: $md) {
+  .about {
+    display: block;
+    .side-4 {
+      width: 100%;
+      padding-bottom: 30px;
+    }
+    .side-5 {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (min-width: $lg) {
+  .about {
+    display: flex;
+    .side-4 {
+      width: 40%;
+    }
+    .side-5 {
+      width: 60%;
+      padding-left: 40px;
+    }
+  }
+}

@@ -1,4 +1,3 @@
-console.log("aksldjalk;sdj");
 $(document).ready(function(){
   pageUrl = window.location.href;
   if(pageUrl.includes("#")){
@@ -13,6 +12,5 @@ $(document).ready(function(){
     }else{
       $("#kala-tab").addClass("active").addClass("show");    
     }
-    
   }  
 });
