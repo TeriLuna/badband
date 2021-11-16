@@ -12209,34 +12209,29 @@ button.nav-link {
     color: #535353;
     text-transform: none; }
 
-.card {
+.sheet {
   position: relative;
   display: flex;
   flex-direction: column;
-  min-width: 0;
-  word-wrap: break-word;
-  background-color: #fff;
-  background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem; }
-  .card__img, .card__img-top {
+  margin-right: 50px;
+  background-color: transparent;
+  border: 0px; }
+  .sheet__img-top {
     border-top-left-radius: calc(0.25rem - 1px);
     border-top-right-radius: calc(0.25rem - 1px); }
-  .card__img, .card__img-top, .card__img-bottom {
-    width: 100%; }
-  .card__body {
+  .sheet__body {
     flex: 1 1 auto;
     padding: 1rem 1rem; }
-  .card__text:last-child {
+  .sheet__text {
     margin-bottom: 0; }
-  .card__text-fancy {
+  .sheet__text-fancy {
     text-decoration: none;
     font-family: "Open Sans", sans-serif;
     font-weight: medium;
     color: #080808;
     letter-spacing: 15px;
     transition: all 0.3s ease-in-out; }
-    .card__text-fancy:hover {
+    .sheet__text-fancy:hover {
       color: #c00000;
       font-weight: 700;
       text-decoration: line-through; }
