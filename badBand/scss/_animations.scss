@@ -1,0 +1,27 @@
+/* ANIMATION */
+$zoom:
+"__small" 1.1 5px,
+"__medium" 1.3 7px,
+"__big" 1.5 9px;
+
+@each $name, $scale, $radius in $zoom {
+  .zoom {
+    transition: transform 0.4s;
+    @include w(100%);
+    height: auto;
+    margin: 0 auto;
+  
+    &#{$name} {
+      &:hover {
+        transform: scale($scale);
+        border-radius: $radius;
+      }
+    }
+  }
+}
+
+.modal {
+  &__yellow {
+    background: $color-yellow;
+  }
+}

@@ -1,0 +1,21 @@
+//Text decoration
+@mixin t-none {
+  text-decoration: none;
+}
+
+@mixin t-overline {
+  text-decoration: overline;
+}
+
+@mixin t-linethrough {
+  text-decoration: line-through;
+}
+
+@mixin t-underline {
+  text-decoration: underline;
+}
+
+// Width
+@mixin w ($width) {
+  width: $width;
+}

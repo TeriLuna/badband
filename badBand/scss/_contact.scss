@@ -1,0 +1,30 @@
+// Contact section
+.contact {
+  position: center;
+  letter-spacing: 2px;
+  font-weight: 700;
+  text-transform: uppercase;
+  &__letter {
+    font-weight:500;
+    color: rgb(34, 34, 34);
+    text-transform: none;
+  }
+}
+
+// container
+.footerContact {
+  @include w(100%);
+  margin-left: auto;
+  margin-right: auto;
+  &__padding {
+    padding: 50px 0;
+  }
+}
+
+// section
+.sectionContact {
+  min-height: 80vh;
+  &__container{
+    padding: 190px 100px;
+  }
+}
