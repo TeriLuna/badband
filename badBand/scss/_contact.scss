@@ -11,20 +11,10 @@
   }
 }
 
-// container
-.footerContact {
-  @include w(100%);
-  margin-left: auto;
-  margin-right: auto;
-  &__padding {
-    padding: 50px 0;
-  }
-}
-
 // section
 .sectionContact {
-  min-height: 80vh;
+  min-height: 74.5vh;
   &__container{
-    padding: 190px 100px;
+    padding: 100px 100px;
   }
 }
