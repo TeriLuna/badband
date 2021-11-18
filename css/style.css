@@ -144,7 +144,7 @@ button.nav-link {
     text-transform: none; }
 
 .sectionContact {
-  min-height: 74.5vh; }
+  padding: 102px 0; }
   .sectionContact__container {
     padding: 100px 100px; }
 
