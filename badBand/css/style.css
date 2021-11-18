@@ -77,6 +77,17 @@ p {
 .font-family-secondary {
   font-family: "Poppins", monospace; }
 
+.rainbow {
+  background-image: linear-gradient(to right, #FE0000, #FD8C00, #FFE500, #119F0B, #0644B3, #C22EDC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bolder;
+  letter-spacing: 2.5px;
+  font-size: larger; }
+  .rainbow-big {
+    font-size: 1.7rem;
+    font-weight: 350; }
+
 @media only screen and (min-width: 320px) {
   .about {
     display: block; }
@@ -193,6 +204,9 @@ button.nav-link {
 .bg-black {
   background-color: black; }
 
+.noFound {
+  padding: 49.5px 0; }
+
 .bgPages {
   position: top;
   background-position: center center;
@@ -201,8 +215,8 @@ button.nav-link {
   background-repeat: no-repeat; }
   .bgPages__contact {
     background-image: url("../img/contact.jpg"); }
-  .bgPages__about {
-    background-image: url("../img/about.jpg"); }
+  .bgPages__404 {
+    background-image: url("../img/404.jpg"); }
   .bgPages__music {
     background-image: url("../img/music.jpg"); }
   .bgPages__gallery {

@@ -39,3 +39,23 @@ p {
 .font-family-secondary {
   font-family: $font-family-2;
 }
+
+// Rainbow text
+.rainbow {
+  background-image: linear-gradient(to right, 
+  $color-red,
+  $color-orange,
+  $color-yellow,
+  $color-green,
+  $color-blue,
+  $color-purple);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bolder;
+  letter-spacing: 2.5px;
+  font-size: larger;
+  &-big {
+    font-size: 1.7rem;
+    font-weight: 350;
+  }
+}
