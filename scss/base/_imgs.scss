@@ -19,3 +19,43 @@ $page:
     }
   }
 }
+
+// Gallery
+.gallery-wrapper {
+  margin: 0;
+  .gallery-box {
+    .gallery-img {
+      position: relative;
+      overflow: hidden;
+      a {
+        display: block;
+        &::before{
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          opacity: 0;
+          width: 100%;
+          height: 100%;
+          background-color: $color-white-700;
+          z-index: 1;
+          @include transition(ease-out 0.12s);
+        }
+        img {
+          @include transform(scale(1));
+          width: 100%;
+          margin: 15px 10px;
+          @include transition(transform 0.4s cubic-bezier(0.16, 0.84, 0.44, 1));
+        }
+        &:hover {
+          &::before{
+            opacity: 0.2;
+          }
+          img {
+            @include transform(scale(1.1));
+          }
+        }
+      }
+    }
+  }
+}

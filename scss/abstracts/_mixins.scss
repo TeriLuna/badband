@@ -19,3 +19,15 @@
 @mixin w ($width) {
   width: $width;
 }
+
+// transitions
+@mixin transition($transition) {
+  -webkit-transition: $transition;
+  transition:         $transition;
+}
+
+// transforms
+@mixin transform($transform) {
+  -webkit-transform: $transform;
+  transform:         $transform;
+}

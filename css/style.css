@@ -15,33 +15,6 @@
     color: #0c0c0c; }
 
 /* ANIMATION */
-.zoom {
-  transition: transform 0.4s;
-  width: 100%;
-  height: auto;
-  margin: 0 auto; }
-  .zoom__small:hover {
-    transform: scale(1.1);
-    border-radius: 5px; }
-
-.zoom {
-  transition: transform 0.4s;
-  width: 100%;
-  height: auto;
-  margin: 0 auto; }
-  .zoom__medium:hover {
-    transform: scale(1.3);
-    border-radius: 7px; }
-
-.zoom {
-  transition: transform 0.4s;
-  width: 100%;
-  height: auto;
-  margin: 0 auto; }
-  .zoom__big:hover {
-    transform: scale(1.5);
-    border-radius: 9px; }
-
 .modal__yellow {
   background: #FFE500; }
 
@@ -149,12 +122,13 @@ button.nav-link {
   position: relative;
   display: flex;
   flex-direction: column;
-  margin-right: 50px;
   background-color: transparent;
   border: 0px; }
   .sheet__img-top {
     border-top-left-radius: calc(0.25rem - 1px);
-    border-top-right-radius: calc(0.25rem - 1px); }
+    border-top-right-radius: calc(0.25rem - 1px);
+    margin-right: 0;
+    width: 100%; }
   .sheet__body {
     flex: 1 1 auto;
     padding: 1rem 1rem; }
@@ -171,6 +145,10 @@ button.nav-link {
         color: #FE0000;
         font-weight: 700;
         text-decoration: line-through; }
+
+@media (max-width: 1024px) {
+  .sheet__img-top {
+    width: 50%; } }
 
 .sticky {
   position: sticky;
@@ -234,5 +212,134 @@ button.nav-link {
   .bgPages__gallery {
     background-image: url("../img/gallery.jpg"); }
 
+.gallery-wrapper {
+  margin: 0; }
+  .gallery-wrapper .gallery-box .gallery-img {
+    position: relative;
+    overflow: hidden; }
+    .gallery-wrapper .gallery-box .gallery-img a {
+      display: block; }
+      .gallery-wrapper .gallery-box .gallery-img a::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.7);
+        z-index: 1;
+        -webkit-transition: ease-out 0.12s;
+        transition: ease-out 0.12s; }
+      .gallery-wrapper .gallery-box .gallery-img a img {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        width: 100%;
+        margin: 15px 10px;
+        -webkit-transition: transform 0.4s cubic-bezier(0.16, 0.84, 0.44, 1);
+        transition: transform 0.4s cubic-bezier(0.16, 0.84, 0.44, 1); }
+      .gallery-wrapper .gallery-box .gallery-img a:hover::before {
+        opacity: 0.2; }
+      .gallery-wrapper .gallery-box .gallery-img a:hover img {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1); }
+
 .sectionMusic {
   padding-bottom: 122.6px; }
+
+.timeline {
+  position: relative;
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 15px 0; }
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background: #FE0000;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1px; }
+
+.song {
+  padding: 15px 30px;
+  position: relative;
+  background: inherit;
+  width: 50%; }
+  .song::after {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: calc(50% - 8px);
+    right: -8px;
+    background: #fff;
+    border: 2px solid #FE0000;
+    border-radius: 16px;
+    z-index: 1;
+    box-sizing: border-box; }
+  .song::before {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    top: calc(50% - 1px);
+    right: 8px;
+    background: #FE0000;
+    z-index: 1; }
+  .song.left {
+    left: 0; }
+  .song.right {
+    left: 50%; }
+    .song.right::after {
+      left: -8px; }
+    .song.right::before {
+      left: 8px; }
+
+.date {
+  position: absolute;
+  display: inline-block;
+  top: calc(50% - 8px);
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: #FE0000;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  z-index: 1; }
+  .date__left {
+    right: -75px; }
+  .date__right {
+    left: -75px; }
+
+.content {
+  padding: 30px;
+  position: relative; }
+  .content__right {
+    padding: 30px; }
+
+@media (max-width: 767.98px) {
+  .timeline::after {
+    left: 45px; }
+  .song {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 0px; }
+  .song.right {
+    left: 0%; }
+  .song.left::after,
+  .song.right::after {
+    left: 38px; }
+  .song.left::before,
+  .song.right::before {
+    left: 50px;
+    width: 20px; }
+  .song.left .date,
+  .song.right .date {
+    right: auto;
+    left: 0px; }
+  .song.left .content,
+  .song.right .content {
+    padding: 0px; } }

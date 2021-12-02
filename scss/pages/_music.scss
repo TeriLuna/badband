@@ -1,3 +1,129 @@
 .sectionMusic {
   padding-bottom: 122.6px;
 }
+
+// line time
+.timeline {
+  position: relative;
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 15px 0;
+  &::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background: $color-red;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1px;
+  }
+}
+
+.song {
+  padding: 15px 30px;
+  position: relative;
+  background: inherit;
+  width: 50%;
+  &::after {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: calc(50% - 8px);
+    right: -8px;
+    background: $color-white;
+    border: 2px solid $color-red;
+    border-radius: 16px;
+    z-index: 1;
+    box-sizing: border-box;
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    top: calc(50% - 1px);
+    right: 8px;
+    background: $color-red;
+    z-index: 1;
+  }
+  &.left {
+    left: 0;
+  }
+  &.right {
+    left: 50%;
+    &::after {
+      left: -8px;
+    }
+    &::before {
+      left: 8px;
+    }
+  }
+}
+.date {
+  position: absolute;
+  display: inline-block;
+  top: calc(50% - 8px);
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: $color-red;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  z-index: 1;
+  &__left {
+    right: -75px;
+  }
+  &__right {
+    left: -75px;
+  }
+}
+
+.content {
+  padding: 30px;
+  position: relative;
+  &__right {
+    padding: 30px;
+  }
+}
+
+
+@media (max-width: 767.98px) {
+  .timeline::after {
+    left: 45px;
+  }
+
+  .song {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 0px;
+  }
+
+  .song.right {
+    left: 0%;
+  }
+
+  .song.left::after, 
+  .song.right::after {
+    left: 38px;
+  }
+
+  .song.left::before,
+  .song.right::before {
+    left: 50px;
+    width: 20px
+  }
+
+  .song.left .date,
+  .song.right .date {
+    right: auto;
+    left: 0px;
+  }
+
+  .song.left .content,
+  .song.right .content {
+    padding: 0px;
+  }
+}
