@@ -8,6 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="música, indie, indieelectro, electro, colombia, la badband, todo lo quieren controlar, queer rock, electroclash, kala, karol et, magic one, the magic one, relajao relajao, nos hemos parado, nos han pisoteado, revolución del ser, indie rock, vicio vicio, not human, pollodoll, rock n roll">
     <meta name="description" content="Con su música crea lugares seguros para el encuentro entre todos como seres críticos y libres de prejuicios !Atrévete a ser libre como su música¡">
+    <!-- animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- Boostrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- Style CSS -->
@@ -60,7 +62,7 @@
       <div class="container">
         <div class="row mb-2">
           <div class="col-12">
-            <h1 class="text-center mb-5">Sumérgete en su múscica</h1>
+            <h1 class="text-center mb-5 animate__animated animate__fadeInDown">Sumérgete en su música</h1>
             <p>
               Ésta banda inició su recorrido músical en el año 2018, definiendose en el camino como una agrupación de Queer rock que busca resaltar las problemáticas y hacer visibles las injusticias que se cometen hacia la población <span class="side__shadow__text-rainbow fs-6">LGBTIQ+</span> para que otros y otras se cuestionen y cuestionen lo que les rodea, y así todos podamos tener los mismos derechos y oportunidades primarias para ser y desarrollar nuestra vida.
               <br><span class="side__shadow__text-rainbow">LA BADBAND</span> trasciende de lo musical a otras experiencias artísticas con una propuesta que fluye entre el Rock n' Roll, Sonidos Electrónicos e Intervenciones Performáticas, que <span class="side__shadow__text-rainbow fs-6 fw-bold">transmiten un grito de libertad en defensa del libre desarrollo del ser.</span> Conócelos un poco más a travé de su música.
@@ -70,39 +72,8 @@
       </div> <!-- END CONTAINER -->
 
       <div class="container">
-        <!-- line time section -->
-        <div class="row">
-          <div class="timeline">
-            <div class="song left">
-              <div class="date date__left">2018</div>
-              <div class="content">
-                <iframe src="https://open.spotify.com/embed/track/6nuqgldYu1DP4S2ScZ1LaR?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen=""></iframe>
-              </div>
-            </div>
-            <div class="song right">
-              <div class="date date__right">2019</div>
-              <div class="content content__right">
-                <iframe src="https://open.spotify.com/embed/album/3P4HI8RjJKoVmFtgOnWj8L?utm_source=generator" width="100%" height="250" frameBorder="0" allowfullscreen=""></iframe>
-              </div>
-            </div>
-            <div class="song left">
-              <div class="date date__left">2020</div>
-              <div class="content">
-                <iframe src="https://open.spotify.com/embed/track/2syEkKKEl2S7DQQE7w3ba5?utm_source=generator" width="100%" height="250" frameBorder="0" allowfullscreen=""></iframe>
-                <iframe src="https://open.spotify.com/embed/track/2V4lKw961NwRItBjWumGQw?utm_source=generator&theme=0" width="100%" height="80" frameBorder="0" allowfullscreen=""></iframe>
-              </div>
-            </div>
-            <div class="song right">
-              <div class="date date__right">2021</div>
-              <div class="content content__right">
-                <iframe src="https://open.spotify.com/embed/album/5hHxyT4AlgznFhmzfitqPy?utm_source=generator" width="100%" height="250" frameBorder="0" allowfullscreen=""></iframe>
-              </div>
-            </div>
-          </div>
-        </div> <!-- END ROW time line section-->
-
         <!-- video youtube section -->
-        <div class="row">
+        <div class="row mb-1">
           <div class="col-12">
             <div id="carouselIframe" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
               <div class="carousel-inner">
@@ -120,12 +91,12 @@
                 </div>
               </div>
   
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselIframe" data-bs-slide="prev">
+              <button class="carousel-control-prev" style="opacity: 1;" type="button" data-bs-target="#carouselIframe" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
               </button>
   
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselIframe" data-bs-slide="next">
+              <button class="carousel-control-next" style="opacity: 1;" type="button" data-bs-target="#carouselIframe" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
               </button>
@@ -133,6 +104,37 @@
             </div>
           </div>
         </div><!-- END ROW youtube section-->
+        <!-- line time section -->
+        <div class="row">
+          <div class="timeline">
+            <div class="song right animate__animated animate__slower animate__delay-1s animate__backInLeft">
+              <div class="date date__right">2021</div>
+              <div class="content content__right">
+                <iframe src="https://open.spotify.com/embed/album/5hHxyT4AlgznFhmzfitqPy?utm_source=generator" width="100%" height="250" frameBorder="0" allowfullscreen=""></iframe>
+              </div>
+            </div>
+            <div class="song left animate__animated animate__slower animate__delay-1s animate__backInRight">
+              <div class="date date__left">2020</div>
+              <div class="content">
+                <iframe src="https://open.spotify.com/embed/track/2syEkKKEl2S7DQQE7w3ba5?utm_source=generator" width="100%" height="250" frameBorder="0" allowfullscreen=""></iframe>
+                <iframe src="https://open.spotify.com/embed/track/2V4lKw961NwRItBjWumGQw?utm_source=generator&theme=0" width="100%" height="80" frameBorder="0" allowfullscreen=""></iframe>
+              </div>
+            </div>
+            <div class="song right animate__animated animate__slower animate__delay-1s animate__backInLeft">
+              <div class="date date__right">2019</div>
+              <div class="content content__right">
+                <iframe src="https://open.spotify.com/embed/album/3P4HI8RjJKoVmFtgOnWj8L?utm_source=generator" width="100%" height="250" frameBorder="0" allowfullscreen=""></iframe>
+              </div>
+            </div>
+            <div class="song left animate__animated animate__slower animate__delay-1s animate__backInRight">
+              <div class="date date__left">2018</div>
+              <div class="content">
+                <iframe src="https://open.spotify.com/embed/track/6nuqgldYu1DP4S2ScZ1LaR?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen=""></iframe>
+              </div>
+            </div>
+          </div>
+        </div> <!-- END ROW time line section-->
+
       </div> <!-- END CONTAINER -->
 
     </div> <!-- End section -->
