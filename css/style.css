@@ -171,7 +171,7 @@ button.nav-link {
 
 html, body {
   scroll-behavior: smooth !important;
-  overflow-x: hidden !important;
+  overflow-x: clip;
   max-width: 100%; }
 
 .section {
