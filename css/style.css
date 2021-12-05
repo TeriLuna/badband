@@ -169,6 +169,11 @@ button.nav-link {
   .text-underline {
     text-decoration: underline; }
 
+html, body {
+  scroll-behavior: smooth !important;
+  overflow-x: hidden !important;
+  max-width: 100%; }
+
 .section {
   padding: 100px 0; }
 
@@ -202,7 +207,6 @@ button.nav-link {
 .bgPages {
   position: top;
   background-position: center center;
-  background-attachment: scroll;
   background-size: cover;
   background-repeat: no-repeat; }
   .bgPages__contact {
